@@ -4,7 +4,7 @@ data/**
 !data/
 !data/raw/
 !data/raw/content_refresh_anonymized.csv
-!work/output/baseline_action_score.csv
+
 
 # Never commit bulk dataset dumps or archives
 *.parquet
