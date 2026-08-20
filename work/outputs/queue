@@ -1,0 +1,33 @@
+--- RANKED ACTION QUEUE ---
+|   priority_rank |   content_age_days |   search_volume |   clicks_last_30d |   model_score | reason_code                                  |
+|----------------:|-------------------:|----------------:|------------------:|--------------:|:---------------------------------------------|
+|               1 |                463 |           74000 |                 1 |      0.4855   | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|               2 |                463 |           60500 |                 0 |      0.407207 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|               3 |                463 |           60500 |                 0 |      0.407207 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|               4 |                463 |           60500 |                 0 |      0.404018 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|               5 |                463 |           60500 |                 0 |      0.404018 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|               6 |                445 |              10 |              1176 |      0.401787 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|               7 |                463 |           49500 |                 0 |      0.361742 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|               8 |                463 |           49500 |                 0 |      0.356247 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|               9 |                463 |           49500 |                 0 |      0.352753 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              10 |                445 |           49500 |                 1 |      0.330723 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              11 |                495 |           33100 |                 5 |      0.311153 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              12 |                463 |           40500 |                 0 |      0.302465 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              13 |                463 |           40500 |                 1 |      0.301052 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              14 |                463 |           40500 |                 0 |      0.300737 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              15 |                489 |               0 |                 0 |      0.3      | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              16 |                463 |           33100 |                 0 |      0.260737 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              17 |                463 |           33100 |                 0 |      0.25753  | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              18 |                445 |              40 |               548 |      0.240828 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              19 |                545 |           27100 |                 0 |      0.235305 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+|              20 |                463 |           27100 |                 0 |      0.235166 | RC_STALE_REFRESH_02 (Stale Asset > 365 Days) |
+
+==================================================
+
+--- EVALUATION METRICS SUMMARY ---
+| Model Variant                     |   NDCG@20 |   MRR |   Precision@10 |
+|:----------------------------------|----------:|------:|---------------:|
+| Week-4 Baseline                   |     0.655 |     1 |            0.2 |
+| Week-6 Trained Model (Time-Aware) |     0.761 |     1 |            0.3 |
+
+
