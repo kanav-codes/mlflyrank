@@ -62,6 +62,9 @@
   ##Model Performance Evaluation
 -Error Analysis: False positives in ranking primarily occurred on seasonal assets where traffic dropped due to annual search seasonality rather than content staleness. The model occasionally flagged mature evergreen pages that maintained stable impressions despite declining click-through rates. Short qualitative error analysis confirms that incorporating seasonal trend awareness significantly reduces false-positive ranking flags compared to static rules.
 
+### Model Performance Evaluation
+![Model vs Baseline Comparison](work/outputs/model_vs_baseline_comparison.png)
+
 ## 6. Interpretation
 
 -What the Model Found: Content age acts as a powerful non-linear weighting factor for search ranking decay. Pages entering the 61–90 day maturity window or exceeding 365 days without updates exhibit predictable performance cliffs.
@@ -70,6 +73,9 @@
 
 -Feature Importance Weights
  -Surprises and Negative Results: Pure competition metrics alone showed negligible correlation with post-refresh recovery, proving that internal content freshness and search intent alignment outweigh external competitor density—a well-understood "no effect" that streamlined our final feature set.
+
+ ### Feature Importance Weights
+![Feature Importance Breakdown](work/outputs/feature_importance_breakdown.png)
 
 ## 7. Recommendation
 
@@ -97,5 +103,8 @@ python scripts/generate_charts.py
 -Random Seeds: Fixed using np.random.seed(42) across all splitting and evaluation scripts.
 
 -Environment Deltas: requirements.txt includes pinned versions for scikit-learn==1.3.0 and pandas==2.0.0 to ensure deterministic metric outputs.
-## 8. Reproducibility
+
+## Claims checklist before submitting: observed / measured / directional / decision-support
+Metrics vs. base rate: report your task's base rate (majority-class %) next to any precision@K or accuracy — a high score can just be a high base rate. AUC / lift over baseline are the honest discrimination numbers.
+language everywhere · no causal claims without an experiment or causal design · no "predicted Google's algorithm" · no client-identifying details · numbers in this report match a fresh re-run.
 
